@@ -1,1 +1,1 @@
-# kas-go
+# kas
