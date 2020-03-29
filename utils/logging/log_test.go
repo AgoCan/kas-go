@@ -1,7 +1,8 @@
 package logging
 
 import (
-	"das-go/config"
+	"kas-go/config"
+
 	"fmt"
 	"testing"
 )

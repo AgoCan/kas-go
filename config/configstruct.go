@@ -20,8 +20,8 @@ type Config struct {
 			Host     string `yaml:"host"`
 		}
 	}
-	Log struct{
-		LogDirector string	`yaml:"logDirector"`
+	Log struct {
+		LogDirector string `yaml:"logDirector"`
 		LogAutoFile string `yaml:"logAutoFile"`
 		//logWaringFile string
 		LogInfoFile string `yaml:"logInfoFile"`

@@ -1,6 +1,9 @@
 package kubernetes
 
+import (
+	"github.com/gin-gonic/gin"
+)
 
-func PodHandler(){
+func PodHandler(c *gin.Context) {
 
 }

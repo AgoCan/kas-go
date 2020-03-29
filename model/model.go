@@ -38,7 +38,5 @@ func Close() {
 }
 
 func migrate() {
-	ContainerMigrate()
-	BaseImageNameMigrate()
-	BuildMigrate()
+
 }

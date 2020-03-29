@@ -17,7 +17,6 @@ import (
 const (
 	ContentTypeJson = "application/json"
 	ContentTypeText = "text/xml"
-
 )
 
 // Data 回调必须使用下面的格式

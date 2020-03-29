@@ -2,6 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
+	"kas-go/handler/kubernetes"
 
 	"kas-go/middleware"
 )
@@ -13,7 +14,7 @@ func SetupRouter() *gin.Engine {
 	router.Use(middleware.LogMiddleware())
 	dockerGroup := router.Group("/docker")
 	{
-		dockerGroup.POST("/run", kubernetes.RunHandler)
+		dockerGroup.POST("/run", kubernetes.PodHandler)
 
 	}
 	return router

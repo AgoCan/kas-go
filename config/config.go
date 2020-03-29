@@ -32,8 +32,6 @@ var (
 	LogInfoFile string
 )
 
-
-
 func init() {
 	Conf.getConfig()
 	MysqlDbName = Conf.Db.Mysql.DbName
@@ -45,7 +43,7 @@ func init() {
 	MysqlConnect = MysqlUsername + ":" + MysqlPassword + "@(" + MysqlHost + ":" + MysqlPort + ")/" + MysqlDbName +
 		"?charset=utf8mb4&parseTime=True&loc=Local"
 	LogDirector = Conf.Log.LogDirector
-	if LogDirector == ""{
+	if LogDirector == "" {
 		LogDirector = path.Join(path.Dir(getCurrPath()), "log")
 	}
 	LogAutoFile = path.Join(LogDirector, Conf.Log.LogAutoFile)
